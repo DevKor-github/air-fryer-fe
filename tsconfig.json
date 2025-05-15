@@ -1,0 +1,24 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["esnext", "dom"],
+    "jsx": "react-native",
+
+    "strict": true,
+    "noImplicitAny": true,
+
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src", "**/*.ts", "**/*.tsx", "eslint.config.mjs"],
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js"]
+}
