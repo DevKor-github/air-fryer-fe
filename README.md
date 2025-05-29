@@ -1,4 +1,4 @@
-## air-fryer-fe
+## repicka-app
 
 에프기210도7분 화이띵
 
