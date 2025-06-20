@@ -1,24 +1,10 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView} from 'react-native-safe-area-context';
+import WebView from 'react-native-webview';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>리피카</Text>
-      <Text>잘되고잇나..</Text>
-    </View>
+    <SafeAreaView style={{flex: 1}}>
+      <WebView source={{uri: 'http://10.121.218.47:5173/repicka-web/'}} />
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 12,
-  },
-});
