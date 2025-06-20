@@ -4,7 +4,7 @@ import WebView from 'react-native-webview';
 export default function App() {
   return (
     <SafeAreaView style={{flex: 1}}>
-      <WebView source={{uri: 'http://10.121.218.47:5173/repicka-web/'}} />
+      <WebView source={{uri: 'https://devkor-github.github.io/repicka-web/'}} />
     </SafeAreaView>
   );
 }
